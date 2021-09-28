@@ -42,7 +42,7 @@ body .codeDiv {
     animation-duration: 80s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     opacity: 0%;
     object-fit: cover;
 }
@@ -55,10 +55,11 @@ body .codeDiv {
 
 .animationBackground {
     position: absolute;
-    background: rgb(32,32,32);
+    background-color: rgb(32,32,32);
     width: 100%;
     height: 100%;
     left: -50%;
+    top: 0;
     z-index: 1;
     transform: skew(-8deg, 0deg);
 }
@@ -93,6 +94,21 @@ body .codeDiv {
     z-index: 10;
 }
 
+.theCodeSvg {
+    filter: drop-shadow(0px 0px  0px rgba(255, 255, 255, 0));
+    transition: 2s;
+}
+.theCodeSvg:hover {
+    filter: drop-shadow(0px 0px 25px #5fffd7c7);
+}
+.theDesignSvg {
+    filter: drop-shadow(0px 0px  0px rgba(0, 0, 0, 0));
+    transition: 2s;
+}
+.theDesignSvg:hover {
+    filter: drop-shadow(0px 0px 25px #ff65ea);
+}
+
 @keyframes rotationForPaths {
     0% {transform: rotateZ(0deg);}
     100% {transform: rotateZ(360deg);}
@@ -119,7 +135,7 @@ body .codeDiv {
 
 .codeDescription  {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     filter: blur(50px);
@@ -140,12 +156,20 @@ body .codeDiv {
     text-align: right;
 }
 
+.codeDescription .buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.codeDescription .buttons img{
+    height: 50px;
+}
+
 .codeDescription .button {
     position: relative;
     perspective: 1000px;
     height: 50px;
     font-size: 20px;
-    padding: 10px 15px;
 }
 
 .codeDescription .button svg {
@@ -157,7 +181,7 @@ body .codeDiv {
 
 .designDescription  {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     filter: blur(50px);
@@ -178,12 +202,20 @@ body .codeDiv {
     -webkit-text-fill-color: transparent;
 }
 
+.designDescription .buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.designDescription .buttons img{
+    height: 50px;
+}
+
 .designDescription .button {
     position: relative;
     perspective: 1000px;
     height: 50px;
     font-size: 20px;
-    padding: 10px 15px;
 }
 
 .designDescription .button svg {
@@ -191,4 +223,71 @@ body .codeDiv {
     width: 100%;
     transform-origin: right;
     transform: rotateY(50deg);
+}
+
+.back_button_design {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: rotateY(180deg);
+    filter: drop-shadow(0px 0px  5px #f58ae700);
+}
+
+.back_button_design:hover {
+    filter: drop-shadow(-5px 5px  5px #F58AE7);
+}
+
+.designButton {
+    cursor: pointer;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px #f58ae700);
+}
+
+.designButton:hover {
+    filter: drop-shadow(5px 5px  5px #F58AE7);
+}
+
+.back_button_code {
+    cursor: pointer;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px #5fffd700);
+}
+
+.back_button_code:hover {
+    filter: drop-shadow(5px 5px 5px #5fffd7);
+}
+
+.codeButton {
+    cursor: pointer;
+    transition: 0.3s;
+    filter: drop-shadow(0px 0px 5px #5fffd700);
+}
+
+.codeButton:hover {
+    filter: drop-shadow(5px 5px 5px #5fffd7);
+}
+
+/* ///////////// */
+/* Media Queries */
+/* ///////////// */
+@media (max-aspect-ratio: 1/1) {
+    .bigContainer {
+        flex-direction: column;
+    }
+    .animationBackground {
+        left: 0;
+        top: -50%;
+        transform: skew(0deg, -8deg);
+    }
+    .codeDescription  {
+        right: 50%;
+        top: 66%;
+        margin: 0;
+        width: 75%;
+    }
+    .designDescription  {
+        left: 50%;
+        top: 33%;
+        margin: 0;
+        width: 75%;
+    }
 }
