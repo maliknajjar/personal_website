@@ -18,6 +18,7 @@ body .part {
     justify-content: center;
     align-items: center;
     width: 10%;
+    max-width: 150px;
     z-index: 10;
     cursor: pointer;
 }
@@ -106,7 +107,7 @@ body .codeDiv {
     transition: 2s;
 }
 .theDesignSvg:hover {
-    filter: drop-shadow(0px 0px 25px #ff65ea);
+    filter: drop-shadow(0px 0px 25px #ff46e6);
 }
 
 @keyframes rotationForPaths {
@@ -144,11 +145,11 @@ body .codeDiv {
     opacity: 0.0;
     right: 33%;
     top: 50%;
-    margin: 0 50px;
+    padding: 0 10%;
+    font-size: 75px;
 }
 
 .codeDescription .description {
-    font-size: 75px;
     background: -webkit-linear-gradient(45deg,rgb(66, 66, 66), white);
     -webkit-background-clip: text;
     background-clip: text;
@@ -159,16 +160,13 @@ body .codeDiv {
 .codeDescription .buttons {
     display: flex;
     margin-top: 15px;
-}
-
-.codeDescription .buttons img{
     height: 50px;
+    justify-content: flex-end;
 }
 
 .codeDescription .button {
     position: relative;
     perspective: 1000px;
-    height: 50px;
     font-size: 20px;
 }
 
@@ -190,11 +188,11 @@ body .codeDiv {
     opacity: 0.0;
     left: 33%;
     top: 50%;
-    margin: 0 50px;
+    padding: 0 10%;
+    font-size: 75px;
 }
 
 .designDescription .description {
-    font-size: 75px;
     background: -webkit-linear-gradient(45deg,rgb(192, 192, 192), black);
     background: -webkit-linear-gradient(45deg,black, rgb(192, 192, 192));
     -webkit-background-clip: text;
@@ -204,17 +202,14 @@ body .codeDiv {
 
 .designDescription .buttons {
     display: flex;
-    margin-top: 15px;
-}
-
-.designDescription .buttons img{
+    margin-top: 30px;
     height: 50px;
+    justify-content: flex-start;
 }
 
 .designDescription .button {
     position: relative;
     perspective: 1000px;
-    height: 50px;
     font-size: 20px;
 }
 
@@ -233,7 +228,7 @@ body .codeDiv {
 }
 
 .back_button_design:hover {
-    filter: drop-shadow(-5px 5px  5px #F58AE7);
+    filter: drop-shadow(-5px 5px  5px #ff46e6);
 }
 
 .designButton {
@@ -243,7 +238,7 @@ body .codeDiv {
 }
 
 .designButton:hover {
-    filter: drop-shadow(5px 5px  5px #F58AE7);
+    filter: drop-shadow(5px 5px  5px #ff46e6);
 }
 
 .back_button_code {
@@ -270,6 +265,11 @@ body .codeDiv {
 /* Media Queries */
 /* ///////////// */
 @media (max-aspect-ratio: 1/1) {
+    body .part {
+        /* width: 75px; */
+        width: 20%;
+        max-width: 100px;
+    }
     .bigContainer {
         flex-direction: column;
     }
@@ -281,13 +281,46 @@ body .codeDiv {
     .codeDescription  {
         right: 50%;
         top: 66%;
-        margin: 0;
-        width: 75%;
+        padding: 5%;
+        width: 80%;
     }
     .designDescription  {
         left: 50%;
         top: 33%;
-        margin: 0;
-        width: 75%;
+        padding: 5%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-aspect-ratio: 1/1) {
+    .codeDescription {
+        font-size: 50px;
+    }
+    .codeDescription .buttons {
+        height: 30px;
+    }
+    .designDescription {
+        font-size: 50px;
+    }
+    .designDescription .buttons {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .codeDescription {
+        font-size: 50px;
+    }
+    .codeDescription .buttons {
+        height: 30px;
+    }
+    .designDescription {
+        font-size: 50px;
+    }
+    .designDescription .buttons {
+        height: 30px;
+    }
+    .logo {
+        width: 40px;
     }
 }

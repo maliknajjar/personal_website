@@ -134,7 +134,7 @@ function mainInit() {
             {opacity: "0%", offset: 0.5}, {opacity: "25%"}
         ])
         objectAnimtion(codeDesign[1], 2000, [
-            {opacity: "0%", offset: 0.5}, {opacity: "10%"}
+            {opacity: "0%", offset: 0.5}, {opacity: "17.5%"}
         ])
         objectAnimtion(codeDescription, 2000, [
             {}, {opacity: "100%"}
