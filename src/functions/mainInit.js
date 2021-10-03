@@ -34,7 +34,7 @@ function mainInit() {
     let codeDescription = document.querySelector(".codeDescription")
     let designDescription = document.querySelector(".designDescription")
 
-    // selecting the svf
+    // selecting the svg
     let codeSvg = document.querySelector(".codeDescription .button svg")
     let designSvg = document.querySelector(".designDescription .button svg")
 
@@ -78,10 +78,10 @@ function mainInit() {
         objectAnimtion(codeContainer, 500, [
             {}, {opacity: "0%"}
         ])
-        objectAnimtion(theDesignDesign[0], 2000, [
+        objectAnimtion(theDesignDesign[0], 1750, [
             {opacity: "0%", offset: 0.5}, {opacity: "25%"}
         ])
-        objectAnimtion(theDesignDesign[1], 2000, [
+        objectAnimtion(theDesignDesign[1], 1750, [
             {opacity: "0%", offset: 0.5}, {opacity: "10%"}
         ])
         objectAnimtion(logo, 2000, [
@@ -130,10 +130,10 @@ function mainInit() {
         objectAnimtion(designContainer, 500, [
             {}, {opacity: "0%"}
         ])
-        objectAnimtion(codeDesign[0], 2000, [
+        objectAnimtion(codeDesign[0], 1750, [
             {opacity: "0%", offset: 0.5}, {opacity: "25%"}
         ])
-        objectAnimtion(codeDesign[1], 2000, [
+        objectAnimtion(codeDesign[1], 1750, [
             {opacity: "0%", offset: 0.5}, {opacity: "17.5%"}
         ])
         objectAnimtion(codeDescription, 2000, [
