@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/codeHeaderCover.png"
 import backButton from "../images/whiteBackButton.svg"
+import codeProjects from "../database/codeProjects"
+
+import link from "../images/link.svg"
 
 import caddy from "../images/codeSkills/caddy.svg"
 import ffmpeg from "../images/codeSkills/ffmpeg.svg"
@@ -36,7 +39,9 @@ import nodejs from "../images/codeSkills/nodejs.svg"
 function Code() {
   return (
     <>
-      <img className="logo" src={logo} alt="" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="" />
+      </Link>
       <div className=" pageBigContainer">
         <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
           <div className="pageHeaderContainer">
@@ -84,15 +89,34 @@ function Code() {
             <div style={{backgroundImage: `url(${electron})`}}></div>
             <div style={{backgroundImage: `url(${mongodb})`}}></div>
           </div>
-          <h1 style={{marginTop: "150px"}}>Projects</h1>
-          <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
-          <div className="cirlceContaienr flex">
-            <div className="circle"></div>
-            <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>10/15/2020</div>
-          </div>
-          <div className="card divWithBorder">
-            <div className="innerCard" style={{backgroundImage: "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('https://scontent.ftun16-1.fna.fbcdn.net/v/t1.6435-9/127640915_131842745650091_6478980153430293436_n.png?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=3GCEn-6nX5QAX-cH88s&tn=cWZDOMsFkL-Yt2ez&_nc_ht=scontent.ftun16-1.fna&oh=67b8d842ef0744b738407b4d65efb059&oe=6180B94E')"}}></div>
-          </div>
+          <h1>Projects</h1>
+          {/* ////////////////// */}
+          {/* code projects loop */}
+          {/* ////////////////// */}
+          {codeProjects.map((project) => {
+            return (
+              <>
+                <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
+                <div className="cirlceContaienr flex">
+                  <div className="circle"></div>
+                  <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{project.date}</div>
+                </div>
+                <div className="card divWithBorder">
+                  <a href={project.link} target="_blank">
+                    <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`}}>
+                      <div class="whenHovering">
+                        <img src={link} alt="" />
+                      </div>
+                      <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
+                        <div className="cardTitle">{project.title}</div>
+                        <div className="cardDescription">{project.description}</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </>
+            )
+          })}
         </div>
       </div>
     </>

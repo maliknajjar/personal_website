@@ -93,9 +93,6 @@ function mainInit() {
         objectAnimtion(designDescription, 1500, [
             {}, {transform: "rotateY(0deg) translate(-50%, -50%)"}
         ], "ease-out")
-        objectAnimtion(designSvg, 2000, [
-            {}, {transform: "rotateY(0deg)"}
-        ])
         objectAnimtion(designDescription, 1250, [
             {}, {filter: "blur(0px)"}
         ])
@@ -142,9 +139,6 @@ function mainInit() {
         objectAnimtion(codeDescription, 1500, [
             {}, {transform: "rotateY(0deg) translate(50%, -50%)"}
         ], "ease-out")
-        objectAnimtion(codeSvg, 2000, [
-            {}, {transform: "rotateY(0deg)"}
-        ])
         objectAnimtion(codeDescription, 1250, [
             {}, {filter: "blur(0px)"}
         ])
@@ -195,9 +189,6 @@ function mainInit() {
         objectAnimtion(designDescription, 250, [
             {}, {opacity: "0%"}
         ])
-        objectAnimtion(designSvg, 500, [
-            {}, {transform: "rotateY(50deg)"}
-        ])
         objectAnimtion(whitebigBackground, 1000, [
             {}, {opacity: "0%"}
         ])
@@ -239,9 +230,6 @@ function mainInit() {
         ])
         objectAnimtion(codeDescription, 250, [
             {}, {opacity: "0%"}
-        ])
-        objectAnimtion(codeSvg, 500, [
-            {}, {transform: "rotateY(-50deg)"}
         ])
         objectAnimtion(bigBackground, 1000, [
             {}, {opacity: "0%"}

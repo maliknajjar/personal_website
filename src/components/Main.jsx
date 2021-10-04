@@ -10,7 +10,12 @@ import back_button_design from "../images/back_button_design.svg"
 function Main() {
 
     useEffect(() => {
+        let body = document.querySelector("body")
+        body.style.overflow = "hidden"
         mainInit()
+        return () => {
+            body.style.overflow = "auto"
+        }
     }, [])
 
     const history = useHistory();
