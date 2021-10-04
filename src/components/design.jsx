@@ -65,11 +65,11 @@ function Design() {
                 <div className="divWithBorder" style={{width: "50px", height: "30px", borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}></div>
                 <div className="cirlceContaienr flex">
                   <div className="circle" style={{backgroundColor: "rgb(0 0 0 / 50%)"}}></div>
-                  <div className="card" style={{color: "rgb(133 133 133)"}}>{project.date}</div>
+                  <div className="card" style={{color: "rgb(77 77 77)"}}>{project.date}</div>
                 </div>
                 <div className="card divWithBorder" style={{borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}>
                   <a href={project.link} target="_blank">
-                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`}}>
+                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`, border: "1px solid #c9c9c9"}}>
                       <div class="whenHovering" style={{backgroundColor: "rgb(255 255 255 / 45%)"}}>
                         <img src={link} alt="" style={{filter: "invert(1)"}} />
                       </div>

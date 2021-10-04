@@ -87,10 +87,10 @@ function mainInit() {
         objectAnimtion(logo, 2000, [
             {filter: "invert(0)", offset: 0.5}, {filter: "invert(1)"}
         ])
-        objectAnimtion(designDescription, 2000, [
+        objectAnimtion(designDescription, 1000, [
             {}, {opacity: "100%"}
         ])
-        objectAnimtion(designDescription, 1500, [
+        objectAnimtion(designDescription, 1250, [
             {}, {transform: "rotateY(0deg) translate(-50%, -50%)"}
         ], "ease-out")
         objectAnimtion(designDescription, 1250, [
@@ -133,10 +133,10 @@ function mainInit() {
         objectAnimtion(codeDesign[1], 1750, [
             {opacity: "0%", offset: 0.5}, {opacity: "17.5%"}
         ])
-        objectAnimtion(codeDescription, 2000, [
+        objectAnimtion(codeDescription, 1000, [
             {}, {opacity: "100%"}
         ])
-        objectAnimtion(codeDescription, 1500, [
+        objectAnimtion(codeDescription, 1250, [
             {}, {transform: "rotateY(0deg) translate(50%, -50%)"}
         ], "ease-out")
         objectAnimtion(codeDescription, 1250, [
