@@ -1,6 +1,6 @@
 import "./code.css"
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/codeHeaderCover.png"
 import backButton from "../images/whiteBackButton.svg"
@@ -37,20 +37,34 @@ import php from "../images/codeSkills/php.svg"
 import nodejs from "../images/codeSkills/nodejs.svg"
 
 function Code() {
+  const history = useHistory();
+  let blackTransition;
+
+  useEffect(() => {
+    blackTransition = document.querySelector(".blackTransition")
+    setTimeout(() => {
+      blackTransition.style.opacity = "0"
+    }, 0)
+  }, [])
+
+  function goTo(path) {
+    blackTransition.style.opacity = "1"
+    setTimeout(() => {
+      history.push(path, {from: "code"})
+    }, 500)
+  }
+
   return (
     <>
-      <Link to="/">
-        <img className="logo" src={logo} alt="" />
-      </Link>
+      <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
+      <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" />
       <div className=" pageBigContainer">
         <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
           <div className="pageHeaderContainer">
-            <Link to="/">
-              <div style={{display: "flex", alignItems: "center"}}>
-                <img style={{height: "20px", marginRight: "10px"}} src={backButton} alt="" />
-                <div style={{fontSize: "20px"}}>Go Back</div>
-              </div>
-            </Link>
+            <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
+              <img style={{height: "20px", marginRight: "10px"}} src={backButton} alt="" />
+              <div style={{fontSize: "20px", cursor: "pointer"}}>Go Back</div>
+            </div>
             <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px"}}>Coding Resume</div>
           </div>
         </div>
@@ -104,7 +118,7 @@ function Code() {
                 <div className="card divWithBorder">
                   <a href={project.link} target="_blank">
                     <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`}}>
-                      <div class="whenHovering">
+                      <div className="whenHovering">
                         <img src={link} alt="" />
                       </div>
                       <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>

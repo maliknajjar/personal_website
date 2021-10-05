@@ -1,6 +1,6 @@
 import "./code.css"
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/test.svg"
 import backButton from "../images/whiteBackButton.svg"
@@ -20,20 +20,35 @@ import resolve from "../images/designSkills/resolve.svg"
 import aftereffect from "../images/designSkills/aftereffect.svg"
 
 function Design() {
+
+  const history = useHistory();
+  let whiteTransition;
+
+  useEffect(() => {
+    whiteTransition = document.querySelector(".whiteTransition")
+    setTimeout(() => {
+      whiteTransition.style.opacity = "0"
+    }, 0)
+  }, [])
+
+  function goTo(path) {
+    whiteTransition.style.opacity = "1"
+    setTimeout(() => {
+      history.push(path, {from: "design"})
+    }, 500)
+  }
+
   return (
     <>
-      <Link to="/">
-        <img className="logo" src={logo} alt="" style={{filter: "invert(1)"}} />
-      </Link>
+    <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
+      <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" style={{filter: "invert(1)"}} />
       <div className=" pageBigContainer" style={{backgroundColor: "#000000", backgroundImage: "linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 90%))"}}>
         <div className="pageHeader" style={{backgroundSize: "100%", backgroundImage: `url(${coverImage})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
           <div className="pageHeaderContainer">
-            <Link to="/">
-              <div style={{display: "flex", alignItems: "center"}}>
-                <img style={{height: "20px", marginRight: "10px", filter: "invert(1)"}} src={backButton} alt="" />
-                <div style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>Go Back</div>
-              </div>
-            </Link>
+            <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
+              <img style={{height: "20px", marginRight: "10px", filter: "invert(1)"}} src={backButton} alt="" />
+              <div style={{fontSize: "20px", color: "black", fontWeight: "bold", cursor: "pointer"}}>Go Back</div>
+            </div>
             <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px", color: "black", fontWeight: "bold"}}>Design Resume</div>
           </div>
         </div>
@@ -70,7 +85,7 @@ function Design() {
                 <div className="card divWithBorder" style={{borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}>
                   <a href={project.link} target="_blank">
                     <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`, border: "1px solid #c9c9c9"}}>
-                      <div class="whenHovering" style={{backgroundColor: "rgb(255 255 255 / 45%)"}}>
+                      <div className="whenHovering" style={{backgroundColor: "rgb(255 255 255 / 45%)"}}>
                         <img src={link} alt="" style={{filter: "invert(1)"}} />
                       </div>
                       <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>

@@ -8,8 +8,49 @@ import back_button_code from "../images/back_button_code.svg"
 import back_button_design from "../images/back_button_design.svg"
 
 function Main() {
-
+    const history = useHistory();
+    let isBlack = true;
+    let blackTransition;
+    let whiteTransition;
     useEffect(() => {
+        blackTransition = document.querySelector(".blackTransition")
+        whiteTransition = document.querySelector(".whiteTransition")
+        if(history.location.state != undefined) {
+            if(history.location.state.from == "code") {
+                // when comming from the code page
+                setTimeout(() => {
+                    whiteTransition.style.display = "none"
+                    whiteTransition.style.opacity = "0"
+                    blackTransition.style.opacity = "0"
+                }, 0)
+                setTimeout(() => {
+                    whiteTransition.style.display = "block"
+                    blackTransition.style.display = "block"
+                }, 500)
+            } else {
+                // when comming from the design page
+                setTimeout(() => {
+                    blackTransition.style.display = "none"
+                    whiteTransition.style.opacity = "0"
+                    blackTransition.style.opacity = "0"
+                }, 0)
+                setTimeout(() => {
+                    whiteTransition.style.display = "block"
+                    blackTransition.style.display = "block"
+                }, 500)
+            }
+        } else {
+            // when opening the page
+            setTimeout(() => {
+                whiteTransition.style.display = "none"
+                whiteTransition.style.opacity = "0"
+                blackTransition.style.opacity = "0"
+            }, 0)
+            setTimeout(() => {
+                whiteTransition.style.display = "block"
+                blackTransition.style.display = "block"
+            }, 500)
+        }
         let body = document.querySelector("body")
         body.style.overflow = "hidden"
         mainInit()
@@ -18,13 +59,27 @@ function Main() {
         }
     }, [])
 
-    const history = useHistory();
     function goTo(path) {
-        history.push(path)
+        if(path == "/code") {
+            // when clicking on the check code resume button
+            whiteTransition.style.display = "none"
+            whiteTransition.style.opacity = "1"
+            blackTransition.style.opacity = "1"
+        } else {
+            // when clicking on the check design resume button
+            blackTransition.style.display = "none"
+            whiteTransition.style.opacity = "1"
+            blackTransition.style.opacity = "1"
+        }
+        setTimeout(() => {
+            history.push(path)
+        }, 500)
     }
 
     return (
         <div className="Main">
+            <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
+            <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
             <img className="logo" src={logo} alt="" />
             <div className="theDesignDesign" style={{filter: 'blur(7.5px)', animationDuration: '80s', width: '150%', left: '-75%'}}>
                 <svg viewBox="0 0 1059 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
