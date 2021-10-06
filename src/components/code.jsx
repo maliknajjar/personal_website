@@ -71,7 +71,7 @@ function Code() {
     <>
       <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
       <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" />
-      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{filter: "invert(1)", zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
           <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
           <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
       </div>
@@ -80,17 +80,17 @@ function Code() {
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
               <img style={{height: "20px", marginRight: "10px"}} src={backButton} alt="" />
-              <div style={{fontSize: "20px", cursor: "pointer"}}>Go Back</div>
+              <div style={{fontSize: "20px", cursor: "pointer"}}>{dictionairy.translations.goback[dictionairy.language]}</div>
             </div>
-            <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px"}}>Coding Resume</div>
+            <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px"}}>{dictionairy.translations.codePageTitle[dictionairy.language]}</div>
           </div>
         </div>
         <div className="pageBody">
           <div className="description">
-            <h1 style={{marginTop: "0"}}>Description</h1>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <h1 style={{marginTop: "0"}}>{dictionairy.translations.description[dictionairy.language]}</h1>
+            {dictionairy.translations.codePageDescription[dictionairy.language]}
           </div>
-          <h1>Skills</h1>
+          <h1>{dictionairy.translations.skills[dictionairy.language]}</h1>
           <div className="skillsPart">
             <div style={{backgroundImage: `url(${css})`}}></div>
             <div style={{backgroundImage: `url(${html})`}}></div>
@@ -120,7 +120,7 @@ function Code() {
             <div style={{backgroundImage: `url(${electron})`}}></div>
             <div style={{backgroundImage: `url(${mongodb})`}}></div>
           </div>
-          <h1>Projects</h1>
+          <h1>{dictionairy.translations.projects[dictionairy.language]}</h1>
           {/* ////////////////// */}
           {/* code projects loop */}
           {/* ////////////////// */}
@@ -130,17 +130,17 @@ function Code() {
                 <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
                 <div className="cirlceContaienr flex">
                   <div className="circle"></div>
-                  <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{project.date}</div>
+                  <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{project.en.date}</div>
                 </div>
                 <div className="card divWithBorder">
-                  <a href={project.link} target="_blank">
-                    <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`}}>
+                  <a href={project.en.link} target="_blank">
+                    <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.en.image}')`}}>
                       <div className="whenHovering">
                         <img src={link} alt="" />
                       </div>
                       <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
-                        <div className="cardTitle">{project.title}</div>
-                        <div className="cardDescription">{project.description}</div>
+                        <div className="cardTitle">{project[dictionairy.language].title}</div>
+                        <div className="cardDescription">{project[dictionairy.language].description}</div>
                       </div>
                     </div>
                   </a>

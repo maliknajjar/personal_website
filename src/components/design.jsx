@@ -63,17 +63,17 @@ function Design() {
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center", cursor: "pointer"}}>
               <img style={{height: "20px", marginRight: "10px", filter: "invert(1)"}} src={backButton} alt="" />
-              <div style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>Go Back</div>
+              <div style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.translations.goback[dictionairy.language]}</div>
             </div>
-            <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px", color: "black", fontWeight: "bold"}}>Design Resume</div>
+            <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px", color: "black", fontWeight: "bold"}}>{dictionairy.translations.designPageTitle[dictionairy.language]}</div>
           </div>
         </div>
         <div className="pageBody">
           <div className="description" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 71%)", backgroundColor: "black", backgroundImage: "linear-gradient(rgb(255 255 255 / 90%), rgb(255 255 255 / 100%))", color: "black", border: "3px solid rgb(0 0 0 / 10%)", borderTop: "none"}}>
-            <h1 style={{marginTop: "0", color: "black"}}>Description</h1>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <h1 style={{marginTop: "0", color: "black"}}>{dictionairy.translations.description[dictionairy.language]}</h1>
+            {dictionairy.translations.designPageDescription[dictionairy.language]}
           </div>
-          <h1 style={{color: "black"}}>Skills</h1>
+          <h1 style={{color: "black"}}>{dictionairy.translations.skills[dictionairy.language]}</h1>
           <div className="skillsPart">
             <div style={{backgroundImage: `url(${photoshop})`}}></div>
             <div style={{backgroundImage: `url(${illustrator})`}}></div>
@@ -86,7 +86,7 @@ function Design() {
             <div style={{backgroundImage: `url(${designer})`}}></div>
             <div style={{backgroundImage: `url(${painter})`}}></div>
           </div>
-          <h1 style={{color: "black"}}>Projects</h1>
+          <h1 style={{color: "black"}}>{dictionairy.translations.projects[dictionairy.language]}</h1>
           {/* ////////////////// */}
           {/* code projects loop */}
           {/* ////////////////// */}
@@ -96,17 +96,17 @@ function Design() {
                 <div className="divWithBorder" style={{width: "50px", height: "30px", borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}></div>
                 <div className="cirlceContaienr flex">
                   <div className="circle" style={{backgroundColor: "rgb(0 0 0 / 50%)"}}></div>
-                  <div className="card" style={{color: "rgb(77 77 77)"}}>{project.date}</div>
+                  <div className="card" style={{color: "rgb(77 77 77)"}}>{project.en.date}</div>
                 </div>
                 <div className="card divWithBorder" style={{borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}>
-                  <a href={project.link} target="_blank">
-                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.image}')`, border: "1px solid #c9c9c9"}}>
+                  <a href={project.en.link} target="_blank">
+                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.en.image}')`, border: "1px solid #c9c9c9"}}>
                       <div className="whenHovering" style={{backgroundColor: "rgb(255 255 255 / 45%)"}}>
                         <img src={link} alt="" style={{filter: "invert(1)"}} />
                       </div>
                       <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
-                        <div className="cardTitle" style={{color: "black", textShadow: "2px 2px 10px white, 2px 2px 10px white, 2px 2px 10px white"}}>{project.title}</div>
-                        <div className="cardDescription" style={{color: "black", textShadow: "2px 2px 10px white, 2px 2px 10px white, 2px 2px 10px white"}}>{project.description}</div>
+                        <div className="cardTitle" style={{color: "black", textShadow: "2px 2px 10px white, 2px 2px 10px white, 2px 2px 10px white"}}>{project[dictionairy.language].title}</div>
+                        <div className="cardDescription" style={{color: "black", textShadow: "2px 2px 10px white, 2px 2px 10px white, 2px 2px 10px white"}}>{project[dictionairy.language].description}</div>
                       </div>
                     </div>
                   </a>
