@@ -1,5 +1,5 @@
 import "./code.css"
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/test.svg"
@@ -7,6 +7,7 @@ import backButton from "../images/whiteBackButton.svg"
 import codeProjects from "../database/designProducts"
 
 import link from "../images/link.svg"
+import languageIcon from "../images/languageIcon.svg"
 
 import houdini from "../images/designSkills/houdini.svg"
 import fusion from "../images/designSkills/fusion.svg"
@@ -19,7 +20,18 @@ import painter from "../images/designSkills/painter.svg"
 import resolve from "../images/designSkills/resolve.svg"
 import aftereffect from "../images/designSkills/aftereffect.svg"
 
+import dictionairy from "../database/dictionary"
+
 function Design() {
+  // refresh component function
+  const [, forceUpdate] = useReducer(x => x + 1, 0);
+
+  // language logic
+  function changeLanguage(lang) {
+      dictionairy.language = lang
+      document.cookie = `lang=${lang}`;
+      forceUpdate()
+  }
 
   const history = useHistory();
   let whiteTransition;
@@ -29,25 +41,29 @@ function Design() {
     setTimeout(() => {
       whiteTransition.style.opacity = "0"
     }, 0)
-  }, [])
+  }, [dictionairy.language])
 
   function goTo(path) {
     whiteTransition.style.opacity = "1"
     setTimeout(() => {
       history.push(path, {from: "design"})
-    }, 500)
+    }, 250)
   }
 
   return (
     <>
-    <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
+    <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
       <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" style={{filter: "invert(1)"}} />
+      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+          <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
+          <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
+      </div>
       <div className=" pageBigContainer" style={{backgroundColor: "#000000", backgroundImage: "linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 90%))"}}>
         <div className="pageHeader" style={{backgroundSize: "100%", backgroundImage: `url(${coverImage})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
           <div className="pageHeaderContainer">
-            <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
+            <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center", cursor: "pointer"}}>
               <img style={{height: "20px", marginRight: "10px", filter: "invert(1)"}} src={backButton} alt="" />
-              <div style={{fontSize: "20px", color: "black", fontWeight: "bold", cursor: "pointer"}}>Go Back</div>
+              <div style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>Go Back</div>
             </div>
             <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px", color: "black", fontWeight: "bold"}}>Design Resume</div>
           </div>

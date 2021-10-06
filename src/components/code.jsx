@@ -1,5 +1,5 @@
 import "./code.css"
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/codeHeaderCover.png"
@@ -7,6 +7,7 @@ import backButton from "../images/whiteBackButton.svg"
 import codeProjects from "../database/codeProjects"
 
 import link from "../images/link.svg"
+import languageIcon from "../images/languageIcon.svg"
 
 import caddy from "../images/codeSkills/caddy.svg"
 import ffmpeg from "../images/codeSkills/ffmpeg.svg"
@@ -36,7 +37,19 @@ import javascript from "../images/codeSkills/javascript.svg"
 import php from "../images/codeSkills/php.svg"
 import nodejs from "../images/codeSkills/nodejs.svg"
 
+import dictionairy from "../database/dictionary"
+
 function Code() {
+  // refresh component function
+  const [, forceUpdate] = useReducer(x => x + 1, 0);
+
+  // language logic
+  function changeLanguage(lang) {
+      dictionairy.language = lang
+      document.cookie = `lang=${lang}`;
+      forceUpdate()
+  }
+
   const history = useHistory();
   let blackTransition;
 
@@ -45,19 +58,23 @@ function Code() {
     setTimeout(() => {
       blackTransition.style.opacity = "0"
     }, 0)
-  }, [])
+  }, [dictionairy.language])
 
   function goTo(path) {
     blackTransition.style.opacity = "1"
     setTimeout(() => {
       history.push(path, {from: "code"})
-    }, 500)
+    }, 250)
   }
 
   return (
     <>
-      <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "500ms", pointerEvents: "none"}}></div>
+      <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
       <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" />
+      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+          <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
+          <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
+      </div>
       <div className=" pageBigContainer">
         <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
           <div className="pageHeaderContainer">

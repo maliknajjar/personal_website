@@ -118,8 +118,8 @@ body .codeDiv {
 
 .logo {
     position: absolute;
-    width: 50px;
-    height: auto;
+    /* width: 50px; */
+    height: 50px;
     top: 20px;
     left: 20px;
     z-index: 10;
