@@ -1,6 +1,16 @@
 module.exports = {
     "language": "en",
     "translations": {
+        //////////////////////////////////////////////////////////////////////////////
+        "codePageDescription": {
+            "en": "i am the best coder in the world .. you should hire me right now",
+            "ar": "كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب انا افضل مبرمج في العالم .. عليك توظيفي الان والا ستندم كما تندم الابل"
+        },
+        "designPageDescription": {
+            "en": "i am the best designer in the world .. you should hire me right now",
+            "ar": "انا افضل مصمم في العالم .. عليك توظيفي الان والا ستندم كما تندم الابلكلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب "
+        },
+        //////////////////////////////////////////////////////////////////////////////
         "code": {
             "en": "Code",
             "ar": "برمجة"
@@ -45,15 +55,5 @@ module.exports = {
             "en": "Projects",
             "ar": "المشاريع"
         },
-        // dynamic variables
-        "codePageDescription": {
-            "en": "i am the best coder in the world .. you should hire me right now",
-            "ar": "كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب انا افضل مبرمج في العالم .. عليك توظيفي الان والا ستندم كما تندم الابل"
-        },
-        "designPageDescription": {
-            "en": "i am the best designer in the world .. you should hire me right now",
-            "ar": "انا افضل مصمم في العالم .. عليك توظيفي الان والا ستندم كما تندم الابلكلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب "
-        },
-
     }
 }

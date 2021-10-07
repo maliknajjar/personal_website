@@ -1,5 +1,6 @@
 import { useEffect, useState, useReducer } from 'react';
 import { useHistory } from "react-router-dom";
+import SocialMedia from "./SocialMedia"
 import "./Main.css"
 import mainInit from "../functions/mainInit"
 import logo from "../images/logo.svg"
@@ -120,6 +121,7 @@ function Main() {
                 <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
                 <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
             </div>
+            <SocialMedia />
             <div className="theDesignDesign" style={{filter: 'blur(7.5px)', animationDuration: '80s', width: '150%', left: '-75%'}}>
                 <svg viewBox="0 0 1059 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M276.173 516.549L270.205 567.86C269.761 571.674 265.363 573.585 262.272 571.308L220.999 540.894C217.908 538.616 218.431 533.849 221.942 532.296L269.184 511.398C272.722 509.834 276.62 512.706 276.173 516.549Z" stroke="#DC51FF" strokeWidth={10} />

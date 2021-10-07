@@ -291,6 +291,10 @@ body .codeDiv {
     filter: drop-shadow(5px 5px 5px #5fffd7);
 }
 
+.languageIcon {
+    transition: 1000ms;
+}
+
 /* ///////////// */
 /* Media Queries */
 /* ///////////// */
@@ -319,6 +323,9 @@ body .codeDiv {
         top: 33%;
         padding: 5%;
         width: 80%;
+    }
+    .languageIcon {
+        filter: invert(1);
     }
 }
 
