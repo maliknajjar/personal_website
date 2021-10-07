@@ -19,8 +19,16 @@
     transition: 500ms;
     opacity: 0.5;
     cursor: pointer;
+    filter: invert(1);
+    
 }
 
 .socialMedia div:hover {
     opacity: 1;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .socialMedia div {
+        filter: invert(0);
+    }
 }

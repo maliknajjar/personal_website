@@ -5,6 +5,7 @@ import logo from "../images/logo.svg"
 import coverImage from "../images/codeHeaderCover.png"
 import backButton from "../images/whiteBackButton.svg"
 import codeProjects from "../database/codeProjects"
+import SocialMedia from "./SocialMedia"
 
 import link from "../images/link.svg"
 import languageIcon from "../images/languageIcon.svg"
@@ -77,6 +78,7 @@ function Code() {
       </div>
       <div className=" pageBigContainer">
         <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
+          <SocialMedia forCode={true} />
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
               <img style={{height: "20px", marginRight: "10px"}} src={backButton} alt="" />

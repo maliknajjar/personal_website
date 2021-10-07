@@ -46,6 +46,10 @@ function mainInit(update) {
     
     // selecting language icon
     let languageIcon = document.querySelector(".languageIcon")
+    
+    // social media icons
+    let socialMediaDivs = document.querySelectorAll(".socialMedia div")
+    
 
     //timouts
     let codeTimeout;
@@ -109,6 +113,13 @@ function mainInit(update) {
                 languageIcon.style.filter = "invert(0)"
             }, 1000)
         }
+        if (!isVertical) {
+            setTimeout(() => {
+                socialMediaDivs.forEach((div) => {
+                    div.style.filter = "invert(0)"
+                })
+            }, 750)
+        }
     })
 
     codeContainer.addEventListener("click", () => {
@@ -160,6 +171,14 @@ function mainInit(update) {
         setTimeout(() => {
             languageIcon.style.filter = "invert(1)"
         }, 750)
+
+        if (isVertical) {
+            setTimeout(() => {
+                socialMediaDivs.forEach((div) => {
+                    div.style.filter = "invert(1)"
+                })
+            }, 750)
+        }
     })
 
     // exetute animation when mouse leaves html element space
@@ -212,6 +231,13 @@ function mainInit(update) {
                 languageIcon.style.filter = "invert(1)"
             }, 250)
         }
+        if (!isVertical) {
+            setTimeout(() => {
+                socialMediaDivs.forEach((div) => {
+                    div.style.filter = "invert(1)"
+                })
+            }, 250)
+        }
     })
 
     back_button_code.addEventListener("click", () => {
@@ -259,7 +285,14 @@ function mainInit(update) {
         if (!isVertical) {
             setTimeout(() => {
                 languageIcon.style.filter = "invert(0)"
-            }, 250)
+            }, 500)
+        }
+        if (isVertical) {
+            setTimeout(() => {
+                socialMediaDivs.forEach((div) => {
+                    div.style.filter = "invert(0)"
+                })
+            }, 500)
         }
     })
 }
