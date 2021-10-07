@@ -84,7 +84,7 @@ function Code() {
               <img style={{height: "20px", marginRight: "10px"}} src={backButton} alt="" />
               <div style={{fontSize: "20px", cursor: "pointer"}}>{dictionairy.translations.goback[dictionairy.language]}</div>
             </div>
-            <div style={{fontSize: "50px", marginTop: "15px", marginBottom: "40px"}}>{dictionairy.translations.codePageTitle[dictionairy.language]}</div>
+            <div style={{fontSize: "35px", marginTop: "15px", marginBottom: "40px"}}>{dictionairy.translations.codePageTitle[dictionairy.language]}</div>
           </div>
         </div>
         <div className="pageBody">
