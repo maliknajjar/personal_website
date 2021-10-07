@@ -102,7 +102,7 @@ function Design() {
                 </div>
                 <div className="card divWithBorder" style={{borderLeft: "2.5px solid rgb(0 0 0 / 50%)"}}>
                   <a href={project.en.link} target="_blank">
-                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.en.image}')`, border: "1px solid #c9c9c9"}}>
+                    <div className="innerCard" style={{boxShadow: "0px 0px 50px 0px rgb(255 255 255 / 100%)", backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%), url('${project.en.image}')`, border: "1px solid #c9c9c9"}}>
                       <div className="whenHovering" style={{backgroundColor: "rgb(255 255 255 / 45%)"}}>
                         <img src={link} alt="" style={{filter: "invert(1)"}} />
                       </div>
