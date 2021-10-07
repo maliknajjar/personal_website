@@ -2,7 +2,7 @@
 let isVertical = false;
 let didClickOnBack = false;
 
-function mainInit() {
+function mainInit(update) {
     // selecting mainDiv an blackBackground
     let blackBackground = document.querySelector(".animationBackground")
     let mainDiv = document.querySelector(".Main")

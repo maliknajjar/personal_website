@@ -5,13 +5,22 @@
     z-index: 30;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 15px;
 }
 
 .socialMedia div {
-    background-color: white;
     width: 30px;
     height: 30px;
     /* border-radius: 50%; */
-    margin-top: 10px;
+    margin-top: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 500ms;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.socialMedia div:hover {
+    opacity: 1;
 }
