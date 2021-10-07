@@ -43,6 +43,9 @@ function mainInit() {
     let back_button_design = document.querySelector(".back_button_design")
     let codeButton = document.querySelector(".codeButton")
     let designButton = document.querySelector(".designButton")
+    
+    // selecting language icon
+    let languageIcon = document.querySelector(".languageIcon")
 
     //timouts
     let codeTimeout;
@@ -99,6 +102,13 @@ function mainInit() {
         objectAnimtion(whitebigBackground, 2000, [
             {}, {opacity: "100%"}
         ])
+
+        // changing the color of the language icon
+        if (isVertical) {
+            setTimeout(() => {
+                languageIcon.style.filter = "invert(0)"
+            }, 1000)
+        }
     })
 
     codeContainer.addEventListener("click", () => {
@@ -145,6 +155,11 @@ function mainInit() {
         objectAnimtion(bigBackground, 2000, [
             {}, {opacity: "100%"}
         ])
+
+        // changing the color of the language icon
+        setTimeout(() => {
+            languageIcon.style.filter = "invert(1)"
+        }, 750)
     })
 
     // exetute animation when mouse leaves html element space
@@ -192,6 +207,11 @@ function mainInit() {
         objectAnimtion(whitebigBackground, 1000, [
             {}, {opacity: "0%"}
         ])
+        if (isVertical) {
+            setTimeout(() => {
+                languageIcon.style.filter = "invert(1)"
+            }, 250)
+        }
     })
 
     back_button_code.addEventListener("click", () => {
@@ -234,6 +254,13 @@ function mainInit() {
         objectAnimtion(bigBackground, 1000, [
             {}, {opacity: "0%"}
         ])
+
+        // changing the color of the language icon
+        if (!isVertical) {
+            setTimeout(() => {
+                languageIcon.style.filter = "invert(0)"
+            }, 250)
+        }
     })
 }
 
