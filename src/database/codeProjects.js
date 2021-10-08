@@ -1,80 +1,67 @@
 let codeProjects = [
     {
         "en": {
-            "title": "typout",
-            "description": "",
+            "title": "Typout",
+            "description": "An article-sharing website that enables the community of writers to connect and evolve",
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ca7fd6128840779.615e62ddc1cc4.png",
             "link": "https://www.behance.net/gallery/128840779/my-first-UIUX-design-for-an-article-sharing-website"
         },
         "ar": {
-            "title": "",
-            "description": "",
+            "title": "حانوت",
+            "description": "تطبيق توصيل المنتجات امام باب البيت",
         },
     },
     {
         "en": {
-            "title": "personal website",
-            "description": "",
-            "date": "10/15/2019",
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a94244128947995.61606e6bcd5b7.png",
-            "link": "https://www.behance.net/gallery/128947995/my-new-personal-website"
-        },
-        "ar": {
-            "title": "",
-            "description": "",
-        },
-    },
-    {
-        "en": {
-            "title": "pymake",
-            "description": "",
+            "title": "Pymake",
+            "description": "A personal library in python that helps building c/c++ projects",
             "date": "10/15/2019",
             "image": "https://maliknajjar.github.io/projects/img/pymake.PNG",
             "link": "https://maliknajjar.github.io/projects/pymake"
         },
         "ar": {
-            "title": "",
-            "description": "",
+            "title": "Pymake",
+            "description": "مكتبة للاستخدام الشخصي بلغة بايثون تساعد على بناء مشاريع لغة سي و سي بلاس بلاس",
         },
     },
     {
         "en": {
-            "title": "videod",
-            "description": "",
+            "title": "Videod",
+            "description": "A program that converts files' bytes into video pixels using ffmpeg library for unlimited storage on Youtube",
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/48ab00128907553.615f96604c73c.png",
             "link": "https://maliknajjar.github.io/projects/videod"
         },
         "ar": {
-            "title": "",
-            "description": "",
+            "title": "Videod",
+            "description": "برنامج يحول بايتات الملفات الى بيكسلات باستخدام مكتبة افافمبيح الشهيرة لتخزين الملفات بشكل غير محدود على منصة يوتيوب",
         },
     },
     {
         "en": {
-            "title": "opencv project",
-            "description": "",
+            "title": "Opencv project",
+            "description": "A project that uses opencv library to detect objects with specific shape and color and calculates its direction",
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c7b9d128907407.615f95125fd27.png",
             "link": "https://maliknajjar.github.io/projects/opencv_project"
         },
         "ar": {
-            "title": "",
-            "description": "",
+            "title": "مشروع اوبن سي في",
+            "description": "برنامج يستخدم مكتبة اوبن سي في الشهيرة لتحديد اشياء بالوان و اشكال محددة و يحسب الاتجاه الخاص بها",
         },
     },
     {
         "en": {
             "title": "7anut",
-            "description": "",
+            "description": "A grocery delivery app that brings your needed products to your doorstep",
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/34c305128841545.615e6934b001d.png",
             "link": "https://www.behance.net/gallery/128841545/groceries-app-uiux-design"
         },
         "ar": {
-            "title": "",
-            "description": "",
+            "title": "حانوت",
+            "description": "تطبيق توصيل المنتجات امام باب البيت",
         },
     },
 ]

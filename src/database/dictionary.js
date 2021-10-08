@@ -3,12 +3,12 @@ module.exports = {
     "translations": {
         //////////////////////////////////////////////////////////////////////////////
         "codePageDescription": {
-            "en": "i am the best coder in the world .. you should hire me right now",
-            "ar": "كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب انا افضل مبرمج في العالم .. عليك توظيفي الان والا ستندم كما تندم الابل"
+            "en": "I am the best programmer in the world ... Don't waste your valubale time and hire me RIGNT NOW!",
+            "ar": "انا افضل مبرمج في العالم ... عليك توظيفي الان و فورا قبل فوات الاوان والا الندم سيكون رفيقك في المنام"
         },
         "designPageDescription": {
-            "en": "i am the best designer in the world .. you should hire me right now",
-            "ar": "انا افضل مصمم في العالم .. عليك توظيفي الان والا ستندم كما تندم الابلكلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب كلاب "
+            "en": "I am the best designer in the world ... Don't waste your valubale time and hire me RIGNT NOW!",
+            "ar": "انا افضل مصمم في العالم ... عليك توظيفي الان و فورا قبل فوات الاوان والا الندم سيكون رفيقك في المنام"
         },
         //////////////////////////////////////////////////////////////////////////////
         "code": {
@@ -16,16 +16,16 @@ module.exports = {
             "ar": "برمجة"
         },
         "codeDescription": {
-            "en": "I love coding so much",
-            "ar": "انا احب البرمجة كثيرا"
+            "en": "My programmer side",
+            "ar": "نصفي المُبرمِج"
         },
         "design": {
             "en": "Design",
             "ar": "تصميم"
         },
         "designDescription": {
-            "en": "I love design so much",
-            "ar": "انا احب التصميم كثيرا"
+            "en": "My designer side",
+            "ar": "نصفي المُصمّم"
         },
         "checkResume": {
             "en": "Check Resume",

@@ -90,7 +90,9 @@ function Code() {
         <div className="pageBody">
           <div className="description">
             <h1 style={{marginTop: "0"}}>{dictionairy.translations.description[dictionairy.language]}</h1>
-            {dictionairy.translations.codePageDescription[dictionairy.language]}
+            <p>
+              {dictionairy.translations.codePageDescription[dictionairy.language]}
+            </p>
           </div>
           <h1>{dictionairy.translations.skills[dictionairy.language]}</h1>
           <div className="skillsPart">
