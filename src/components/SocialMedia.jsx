@@ -16,7 +16,7 @@ export default function SocialMedia({forDesign = false, forCode = false}) {
     }
     return (
         <div className="socialMedia" style={styles}>
-            <a href="https://github.com/malik446644" target="_blank">
+            <a href="https://github.com/maliknajjar" target="_blank">
                 <div className={forDesign ? "forDesign" : forCode ? "forCode" : ""} style={{backgroundImage: `url('${github}')`}}></div>
             </a>
             <a href="https://www.behance.net/maliknajjar" target="_blank">

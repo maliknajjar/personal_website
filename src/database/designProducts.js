@@ -1,7 +1,7 @@
 let designProjects = [
     {
         "en": {
-            "title": "",
+            "title": "7anut",
             "description": "",
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/34c305128841545.615e6934b001d.png",
@@ -305,6 +305,19 @@ let designProjects = [
             "date": "10/15/2019",
             "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6a75970997777.5bb60a9b2254c.png",
             "link": "https://www.behance.net/gallery/70997777/ottoman-helmet"
+        },
+        "ar": {
+            "title": "",
+            "description": "",
+        },
+    },
+    {
+        "en": {
+            "title": "personal website",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a94244128947995.61606e6bcd5b7.png",
+            "link": "https://www.behance.net/gallery/128947995/my-new-personal-website"
         },
         "ar": {
             "title": "",

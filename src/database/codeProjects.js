@@ -1,30 +1,82 @@
 let codeProjects = [
     {
         "en": {
-            "title": "7anut App",
-            "description": "7anut app is an app that makes your life way much easier man. you must try it before you die because if you don’t try it your life is wasted. you can but choclates and fish and chips and eat sandwich with tune and mayonaise man.",
-            "image": "https://scontent.ftun16-1.fna.fbcdn.net/v/t1.6435-9/127640915_131842745650091_6478980153430293436_n.png?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=3GCEn-6nX5QAX-cH88s&tn=cWZDOMsFkL-Yt2ez&_nc_ht=scontent.ftun16-1.fna&oh=67b8d842ef0744b738407b4d65efb059&oe=6180B94E",
+            "title": "typout",
+            "description": "",
             "date": "10/15/2019",
-            "link": "https://www.google.com/"
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ca7fd6128840779.615e62ddc1cc4.png",
+            "link": "https://www.behance.net/gallery/128840779/my-first-UIUX-design-for-an-article-sharing-website"
         },
         "ar": {
-            "title": "تطبيق حانوت",
-            "description": "حانوت هو تطبيق جميل جدا و يمكنك من اكل الحمير ليلا بدون مشاكل",
+            "title": "",
+            "description": "",
         },
     },
     {
         "en": {
-            "title": "typout.com",
-            "description": "typout is the best website ever ever ever ever ever ever ever ever ever ever ever ever ever ever ever ever ",
-            "image": "https://scontent.ftun16-1.fna.fbcdn.net/v/t1.6435-9/101687679_276836770389891_1588536419414966272_n.png?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=6mgaTzsqABsAX8LIK00&_nc_ht=scontent.ftun16-1.fna&oh=6d10e46f74078460afc584d3b14d3031&oe=61811774",
-            "date": "10/20/2020",
-            "link": "https://www.facebook.com"
+            "title": "personal website",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a94244128947995.61606e6bcd5b7.png",
+            "link": "https://www.behance.net/gallery/128947995/my-new-personal-website"
         },
         "ar": {
-            "title": "تايباوت",
-            "description": "تايباوت هو موقع يمكنك من اكل البغال مرة في اليوم و في الصباح فقط",
-        }
-    }
+            "title": "",
+            "description": "",
+        },
+    },
+    {
+        "en": {
+            "title": "pymake",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://maliknajjar.github.io/projects/img/pymake.PNG",
+            "link": "https://maliknajjar.github.io/projects/pymake"
+        },
+        "ar": {
+            "title": "",
+            "description": "",
+        },
+    },
+    {
+        "en": {
+            "title": "videod",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/48ab00128907553.615f96604c73c.png",
+            "link": "https://maliknajjar.github.io/projects/videod"
+        },
+        "ar": {
+            "title": "",
+            "description": "",
+        },
+    },
+    {
+        "en": {
+            "title": "opencv project",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c7b9d128907407.615f95125fd27.png",
+            "link": "https://maliknajjar.github.io/projects/opencv_project"
+        },
+        "ar": {
+            "title": "",
+            "description": "",
+        },
+    },
+    {
+        "en": {
+            "title": "7anut",
+            "description": "",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/34c305128841545.615e6934b001d.png",
+            "link": "https://www.behance.net/gallery/128841545/groceries-app-uiux-design"
+        },
+        "ar": {
+            "title": "",
+            "description": "",
+        },
+    },
 ]
 
 module.exports = codeProjects;
