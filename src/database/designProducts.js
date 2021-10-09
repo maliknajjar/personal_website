@@ -314,6 +314,19 @@ let designProjects = [
             "description": "لوحة فنية ثلاثية الاعاد لخوذة عثمانية مزركشة بالخط العربي",
         },
     },
+    {
+        "en": {
+            "title": "Rua Shabab",
+            "description": "A short video series that was made in partnership with Jasmine foundation and CONNEKT.",
+            "date": "10/15/2019",
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54cf10129006177.6161dfbd4630f.png",
+            "link": "https://www.behance.net/gallery/129006177/Rua-Shabab-%28youtube-show-intro%29"
+        },
+        "ar": {
+            "title": "رؤى شباب",
+            "description": "سلسلة فيديوهات يوتيوب برعاية جمعية الياسمين و مؤسسة كونيكت",
+        },
+    },
 ]
 
 module.exports = designProjects;
