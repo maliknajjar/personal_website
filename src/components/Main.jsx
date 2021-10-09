@@ -92,7 +92,7 @@ function Main() {
         body.style.overflow = "hidden"
         mainInit()
         return () => {
-            body.style.overflow = "overlay"
+            body.style.overflow = "auto"
         }
     }, [])
 
