@@ -54,13 +54,15 @@ function Design() {
   return (
     <>
     <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
-      <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" style={{filter: "invert(1)"}} />
-      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+      <Link to="/">
+        <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" style={{filter: "invert(1)"}} />
+      </Link>
+      <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{filter: "invert(0)", zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
         <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
         <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
       </div>
       <div className=" pageBigContainer" style={{backgroundColor: "#000000", backgroundImage: "linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 90%))"}}>
-        <div className="pageHeader" style={{backgroundSize: "100%", backgroundImage: `url(${coverImage})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
+        <div className="pageHeader" style={{backgroundSize: "cover", backgroundImage: `url(${coverImage})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
           <SocialMedia forDesign={true} />
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center", cursor: "pointer"}}>

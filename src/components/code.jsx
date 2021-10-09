@@ -71,7 +71,9 @@ function Code() {
   return (
     <>
       <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
-      <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" />
+      <Link to="/">
+        <img onClick={() => {goTo("/")}} className="logo" src={logo} alt="" />
+      </Link>
       <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{filter: "invert(1)", zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
           <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
           <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>

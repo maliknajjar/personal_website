@@ -1,5 +1,5 @@
 import { useEffect, useState, useReducer } from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia"
 import "./Main.css"
 import mainInit from "../functions/mainInit"
@@ -116,7 +116,9 @@ function Main() {
     return (
         <div className="Main">
             {jsx}
-            <img className="logo" src={logo} alt="" />
+            <Link to="/">
+                <img className="logo" src={logo} alt="" />
+            </Link>
             <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
                 <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
                 <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
