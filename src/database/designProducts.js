@@ -1,18 +1,5 @@
 let designProjects = [
     {
-        "en": {
-            "title": "test",
-            "description": "test",
-            "date": "test",
-            "image": "",
-            "link": ""
-        },
-        "ar": {
-            "title": "test",
-            "description": "test",
-        },
-    },
-    {
         /*
             During the pandemic, Tunisians experienced hardships accessing food and groceries. This app was made just to solve that. Using a minimalist approach; I created a simple and direct design that enables the users to create their account, log in and order their food without any confusion. In no time, the user gets their order on their doorfront. I employed user authentication, GPS localisation, real time check for the availability of the products. The yellow interface attracts attention yet, is not in your face.
         */
