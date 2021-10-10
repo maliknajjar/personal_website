@@ -354,3 +354,27 @@ body .codeDiv {
         font-size: 80%;
     }
 }
+
+@media screen and (max-width: 366px) {
+    .codeDescription {
+        font-size: 40px;
+    }
+    .codeDescription .buttons {
+        height: 30px;
+    }
+    .designDescription {
+        font-size: 40px;
+    }
+    .designDescription .buttons {
+        height: 30px;
+    }
+    .logo {
+        width: 30px;
+    }
+    .designDescription .button .buttonText {
+        font-size: 65%;
+    }
+    .codeDescription .button .buttonText {
+        font-size: 65%;
+    }
+}
