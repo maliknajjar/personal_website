@@ -1,4 +1,4 @@
-import { useEffect, useState, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { useHistory, Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia"
 import "./Main.css"
@@ -24,7 +24,7 @@ function Main() {
 
     const history = useHistory();
     let jsx;
-    if(history.location.state != undefined) {
+    if(history.location.state !== undefined) {
         if(history.location.state.from == "code") {
             // when comming from the code page
             jsx = <>

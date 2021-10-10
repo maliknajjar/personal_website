@@ -1,6 +1,5 @@
 import Main from "./Main"
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Code from "./code"
 import Design from "./design"
 import dictionary from "../database/dictionary"
@@ -12,7 +11,7 @@ function App() {
   var url = new URL(window.location.href);
   var lang = url.searchParams.get("lang");
   if (lang != null) {
-    if (lang == "ar") {
+    if (lang === "ar") {
       document.cookie = "lang=ar";
       console.log("setting language to arabic")
     } else {
@@ -20,7 +19,7 @@ function App() {
       console.log("setting language to english")
     }
   } else {
-    if (getCookie("lang") == ""){
+    if (getCookie("lang") === ""){
       document.cookie = "lang=en";
       console.log("setting language to english")
     } else {
