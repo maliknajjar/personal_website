@@ -18,7 +18,7 @@ function Main() {
     // language logic
     function changeLanguage(lang) {
         dictionairy.language = lang
-        document.cookie = `lang=${lang}`;
+        document.cookie = `lang=${lang}; expires=` + new Date(9999, 0, 1).toUTCString();
         forceUpdate()
     }
 
