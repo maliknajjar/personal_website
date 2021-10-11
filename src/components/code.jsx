@@ -3,6 +3,7 @@ import { useEffect, useState, useReducer } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
 import coverImage from "../images/codeHeaderCover.png"
+import coverImageLow from "../images/codeHeaderCoverLow.jpg"
 import backButton from "../images/whiteBackButton.svg"
 import codeProjects from "../database/codeProjects"
 import SocialMedia from "./SocialMedia"
@@ -79,7 +80,7 @@ function Code() {
           <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
       </div>
       <div className=" pageBigContainer">
-        <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
+        <div className="pageHeader" style={{backgroundImage: `url(${coverImage}), url(${coverImageLow})`}}>
           <SocialMedia forCode={true} />
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>
