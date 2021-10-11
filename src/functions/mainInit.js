@@ -50,7 +50,10 @@ function mainInit(update) {
     // social media icons
     let socialMediaDivs = document.querySelectorAll(".socialMedia div")
     
-
+    // two sides buttons
+    let theCodeSvg = document.querySelector(".theCodeSvg")
+    let theDesignSvg = document.querySelector(".theDesignSvg")
+    
     //timouts
     let codeTimeout;
     let designTimeout;
@@ -60,6 +63,9 @@ function mainInit(update) {
 
     // exetute animation when mouse entering html element space
     designContainer.addEventListener("click", () => {
+        // making the design icon glow
+        theDesignSvg.style.filter = "drop-shadow(0px 0px 25px #ff46e6)"
+
         didClickOnBack = false
         clearTimeout(designTimeout)
         designDescription.style.display = "flex"
@@ -123,6 +129,9 @@ function mainInit(update) {
     })
 
     codeContainer.addEventListener("click", () => {
+        // making the code button glow
+        theCodeSvg.style.filter = "drop-shadow(0px 0px 25px #5fffd7c7)"
+
         didClickOnBack = false
         clearTimeout(codeTimeout)
         codeDescription.style.display = "flex"
@@ -183,6 +192,9 @@ function mainInit(update) {
 
     // exetute animation when mouse leaves html element space
     back_button_design.addEventListener("click", () => {
+        // removing glow
+        theDesignSvg.style.filter = "drop-shadow(0px 0px  0px rgba(255, 255, 255, 0))"
+
         didClickOnBack = true
         codeContainer.style.pointerEvents = "all";
         codeDiv.style.zIndex = "10"
@@ -241,6 +253,9 @@ function mainInit(update) {
     })
 
     back_button_code.addEventListener("click", () => {
+        // removing glow
+        theCodeSvg.style.filter = "drop-shadow(0px 0px  0px rgba(255, 255, 255, 0))"
+
         didClickOnBack = true
         designContainer.style.pointerEvents = "all";
         designDiv.style.zIndex = "10"

@@ -333,13 +333,13 @@ body .codeDiv {
 
 @media screen and (max-width: 750px) {
     .codeDescription {
-        font-size: 50px;
+        font-size: 40px;
     }
     .codeDescription .buttons {
         height: 40px;
     }
     .designDescription {
-        font-size: 50px;
+        font-size: 40px;
     }
     .designDescription .buttons {
         height: 40px;
@@ -357,13 +357,13 @@ body .codeDiv {
 
 @media screen and (max-width: 366px) {
     .codeDescription {
-        font-size: 40px;
+        font-size: 30px;
     }
     .codeDescription .buttons {
         height: 30px;
     }
     .designDescription {
-        font-size: 40px;
+        font-size: 30px;
     }
     .designDescription .buttons {
         height: 30px;
