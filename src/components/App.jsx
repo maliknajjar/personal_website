@@ -10,20 +10,21 @@ function App() {
   // get url params
   var url = new URL(window.location.href);
   var lang = url.searchParams.get("lang");
+  console.log(new Date(9999, 0, 1).toUTCString())
   if (lang != null) {
     if (lang === "ar") {
-      document.cookie = "lang=ar";
+      document.cookie = "lang=ar; max-age=311040000";
       console.log("setting language to arabic")
     } else {
-      document.cookie = "lang=en";
+      document.cookie = "lang=en; max-age=311040000";
       console.log("setting language to english")
     }
   } else {
     if (getCookie("lang") === ""){
-      document.cookie = "lang=en";
+      document.cookie = "lang=en; max-age=311040000";
       console.log("setting language to english")
     } else {
-      document.cookie = `lang=${getCookie("lang")}`;
+      document.cookie = `lang=${getCookie("lang")}; max-age=311040000`;
       console.log(`setting language to ${getCookie("lang")}`)
     }
   }
