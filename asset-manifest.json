@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.faa81e7f.chunk.css",
-    "main.js": "/static/js/main.b5fa6f15.chunk.js",
-    "main.js.map": "/static/js/main.b5fa6f15.chunk.js.map",
+    "main.css": "/static/css/main.69c0aaf6.chunk.css",
+    "main.js": "/static/js/main.2a23d9bc.chunk.js",
+    "main.js.map": "/static/js/main.2a23d9bc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.52755a81.js",
     "runtime-main.js.map": "/static/js/runtime-main.52755a81.js.map",
     "static/js/2.9354ac83.chunk.js": "/static/js/2.9354ac83.chunk.js",
     "static/js/2.9354ac83.chunk.js.map": "/static/js/2.9354ac83.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.faa81e7f.chunk.css.map": "/static/css/main.faa81e7f.chunk.css.map",
+    "static/css/main.69c0aaf6.chunk.css.map": "/static/css/main.69c0aaf6.chunk.css.map",
     "static/js/2.9354ac83.chunk.js.LICENSE.txt": "/static/js/2.9354ac83.chunk.js.LICENSE.txt",
     "static/media/aftereffect.ad9fe33c.svg": "/static/media/aftereffect.ad9fe33c.svg",
     "static/media/back_button_code.b5406507.svg": "/static/media/back_button_code.b5406507.svg",
@@ -62,7 +62,7 @@
   "entrypoints": [
     "static/js/runtime-main.52755a81.js",
     "static/js/2.9354ac83.chunk.js",
-    "static/css/main.faa81e7f.chunk.css",
-    "static/js/main.b5fa6f15.chunk.js"
+    "static/css/main.69c0aaf6.chunk.css",
+    "static/js/main.2a23d9bc.chunk.js"
   ]
 }
