@@ -1,5 +1,5 @@
 import Main from "./Main"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, HashRouter } from "react-router-dom";
 import Code from "./code"
 import Design from "./design"
 import dictionary from "../database/dictionary"
@@ -29,7 +29,7 @@ function App() {
   }
   dictionary.language = getCookie("lang")
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route path="/code">
           <Code />
@@ -41,7 +41,7 @@ function App() {
           <Main />
         </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
