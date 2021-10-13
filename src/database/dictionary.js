@@ -3,12 +3,12 @@ module.exports = {
     "translations": {
         //////////////////////////////////////////////////////////////////////////////
         "codePageDescription": {
-            "en": "I am the best programmer in the world ... Don't waste your valubale time and hire me RIGNT NOW!",
-            "ar": "انا افضل مبرمج في العالم ... عليك توظيفي الان و فورا قبل فوات الاوان والا الندم سيكون رفيقك في المنام"
+            "en": "From my past experiences with programmers, I realized that none of them were able to portray what I had in mind correctly. So, I took matters in to my hands and I decided to overcome my fear and learn programming form zero. My journey was not an easy one but, with time I grew to like it and now I am passionate about programming. Here is a collection of my work.",
+            "ar": "استنتجت بعد تجاربي الشنعية مع المبرمجين و شركات البرمجة بانه لا يوجد احد يستطيع برمجة فكرتي بالطريقة التي اريد. فاضطررت مكرها ان اتعلم البرمجة بنفسي, فتفاجأت بجمال البرمجة. رحلتي في التعلم لم تكن سهلة خصوصا في البداية, فلغة الالات و منطقها مختلف عن منطق البشر و منذ ذلك الحين وانا مهووس ومستمتع بالبرمجة ... هذه مجموعة من اعمالي اتمنى ان تنال اعجابكم"
         },
         "designPageDescription": {
-            "en": "I am the best designer in the world ... Don't waste your valubale time and hire me RIGNT NOW!",
-            "ar": "انا افضل مصمم في العالم ... عليك توظيفي الان و فورا قبل فوات الاوان والا الندم سيكون رفيقك في المنام"
+            "en": "There is a certain type of charm in designing something form scratch and seeing it take form to become something concrete. Design has opened the doors for me to explore my imagination and put it to test. Down below you see a variety of artworks that are a combination of personal pieces and professional ones that I worked on as a freelancer ... enjoy!",
+            "ar": "ان تصمم شيئا من الصفر و تراه مكتملا امام ناظريك لشيئ ساحر يلهمني و يحمسني بأن اصمم و اتعلم طرقا و انواعا مختلفة من التصميم. سترى في الاسفل مجموعة متنوعة من التصاميم التي قمت بها كمصمم مستقل ... أتمنى ان تنال اعجابكم"
         },
         //////////////////////////////////////////////////////////////////////////////
         "code": {
