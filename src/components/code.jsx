@@ -38,6 +38,7 @@ import cpp from "../images/codeSkills/cpp.svg"
 import javascript from "../images/codeSkills/javascript.svg"
 import php from "../images/codeSkills/php.svg"
 import nodejs from "../images/codeSkills/nodejs.svg"
+import svelte from "../images/codeSkills/svelte.png"
 
 import dictionairy from "../database/dictionary"
 
@@ -111,6 +112,7 @@ function Code() {
             <div style={{backgroundImage: `url(${docker})`}}></div>
             <div style={{backgroundImage: `url(${react})`}}></div>
             <div style={{backgroundImage: `url(${opencv})`}}></div>
+            <div style={{backgroundImage: `url(${svelte})`}}></div>
             <div style={{backgroundImage: `url(${git})`}}></div>
             <div style={{backgroundImage: `url(${nodejs})`}}></div>
             <div style={{backgroundImage: `url(${caddy})`}}></div>
