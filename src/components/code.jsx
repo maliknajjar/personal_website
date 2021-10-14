@@ -111,7 +111,7 @@ function Code() {
             <div style={{backgroundImage: `url(${php})`}}></div>
             <div style={{backgroundImage: `url(${docker})`}}></div>
             <div style={{backgroundImage: `url(${react})`}}></div>
-            <div style={{backgroundImage: `url(${opencv})`}}></div>
+            <div style={{backgroundImage: `url(${opencv})`}}></div> 
             <div style={{backgroundImage: `url(${svelte})`}}></div>
             <div style={{backgroundImage: `url(${git})`}}></div>
             <div style={{backgroundImage: `url(${nodejs})`}}></div>
