@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.69c0aaf6.chunk.css",
-    "main.js": "/static/js/main.61ce5ece.chunk.js",
-    "main.js.map": "/static/js/main.61ce5ece.chunk.js.map",
+    "main.css": "/static/css/main.de0d9b9e.chunk.css",
+    "main.js": "/static/js/main.64cd07e7.chunk.js",
+    "main.js.map": "/static/js/main.64cd07e7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.52755a81.js",
     "runtime-main.js.map": "/static/js/runtime-main.52755a81.js.map",
     "static/js/2.9354ac83.chunk.js": "/static/js/2.9354ac83.chunk.js",
     "static/js/2.9354ac83.chunk.js.map": "/static/js/2.9354ac83.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.69c0aaf6.chunk.css.map": "/static/css/main.69c0aaf6.chunk.css.map",
+    "static/css/main.de0d9b9e.chunk.css.map": "/static/css/main.de0d9b9e.chunk.css.map",
     "static/js/2.9354ac83.chunk.js.LICENSE.txt": "/static/js/2.9354ac83.chunk.js.LICENSE.txt",
     "static/media/aftereffect.ad9fe33c.svg": "/static/media/aftereffect.ad9fe33c.svg",
     "static/media/back_button_code.b5406507.svg": "/static/media/back_button_code.b5406507.svg",
@@ -53,6 +53,7 @@
     "static/media/react.b259137f.svg": "/static/media/react.b259137f.svg",
     "static/media/resolve.f3bd2874.svg": "/static/media/resolve.f3bd2874.svg",
     "static/media/rust.2198dd35.svg": "/static/media/rust.2198dd35.svg",
+    "static/media/svelte.6b2179c5.png": "/static/media/svelte.6b2179c5.png",
     "static/media/test.1543a0e6.svg": "/static/media/test.1543a0e6.svg",
     "static/media/unity.06f3d103.svg": "/static/media/unity.06f3d103.svg",
     "static/media/websocket.63c86a49.svg": "/static/media/websocket.63c86a49.svg",
@@ -62,7 +63,7 @@
   "entrypoints": [
     "static/js/runtime-main.52755a81.js",
     "static/js/2.9354ac83.chunk.js",
-    "static/css/main.69c0aaf6.chunk.css",
-    "static/js/main.61ce5ece.chunk.js"
+    "static/css/main.de0d9b9e.chunk.css",
+    "static/js/main.64cd07e7.chunk.js"
   ]
 }
