@@ -60,8 +60,8 @@ let codeProjects = [
             "link": "https://www.behance.net/gallery/128840779/my-first-UIUX-design-for-an-article-sharing-website"
         },
         "ar": {
-            "title": "حانوت",
-            "description": "تطبيق توصيل المنتجات امام باب البيت",
+            "title": "تايباوت",
+            "description": "موقع مشاركة المقالات الذي يمكن الكتاب من التواصل و التطور",
         },
     },
 ]
