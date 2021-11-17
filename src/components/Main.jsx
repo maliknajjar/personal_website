@@ -126,7 +126,7 @@ function Main() {
             </div>
             <div className="languageIconNotInvert languageIcon" style={{zIndex: "30", cursor: "pointer", bottom: "20px", right: "20px", top: "initial", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
                 <img style={{height: "100%", margin: "5px"}} src={phone} alt="" />
-                <div className="thetext" style={{marginLeft: "5px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "Contact Us" : "تواصل معي"}</div>
+                <div className="thetext" style={{marginLeft: "5px", color: "black", fontWeight: "bold"}}>{dictionairy.translations.contact[dictionairy.language]}</div>
             </div>
             <SocialMedia />
             <div className="theDesignDesign" style={{filter: 'blur(7.5px)', animationDuration: '80s', width: '150%', left: '-75%'}}>

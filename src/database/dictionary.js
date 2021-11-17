@@ -56,7 +56,7 @@ module.exports = {
             "ar": "المشاريع"
         },
         "contact": {
-            "en": "Contact Us",
+            "en": "Contact Me",
             "ar": "تواصل معي"
         },
         "ability": {
