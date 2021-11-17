@@ -7,6 +7,7 @@ import logo from "../images/logo.svg"
 import code from "../images/codeDesign.svg"
 import back_button_code from "../images/back_button_code.svg"
 import back_button_design from "../images/back_button_design.svg"
+import phone from "../images/phone.svg"
 import languageIcon from "../images/languageIcon.svg"
 
 import dictionairy from "../database/dictionary"
@@ -122,6 +123,10 @@ function Main() {
             <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIcon logo" style={{zIndex: "30", cursor: "pointer", right: "20px", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
                 <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
                 <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
+            </div>
+            <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIconNotInvert languageIcon" style={{zIndex: "30", cursor: "pointer", bottom: "20px", right: "20px", top: "initial", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+                <img style={{height: "100%", margin: "5px"}} src={phone} alt="" />
+                <div className="thetext" style={{marginLeft: "5px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "Contact Us" : "تواصل معي"}</div>
             </div>
             <SocialMedia />
             <div className="theDesignDesign" style={{filter: 'blur(7.5px)', animationDuration: '80s', width: '150%', left: '-75%'}}>
@@ -272,6 +277,10 @@ function Main() {
                         <div className="text">{dictionairy.translations.design[dictionairy.language]}</div>
                     </div>
                 </div>
+            </div>
+            <div className="contact">
+                <div className="title">Contact Us</div>
+                <div className="message">Contact Us</div>
             </div>
         </div>
     );

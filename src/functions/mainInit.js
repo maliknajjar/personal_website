@@ -46,6 +46,7 @@ function mainInit(update) {
     
     // selecting language icon
     let languageIcon = document.querySelector(".languageIcon")
+    let languageIconNotInvert = document.querySelector(".languageIconNotInvert")
     
     // social media icons
     let socialMediaDivs = document.querySelectorAll(".socialMedia div")
@@ -179,6 +180,7 @@ function mainInit(update) {
         // changing the color of the language icon
         setTimeout(() => {
             languageIcon.style.filter = "invert(1)"
+            languageIconNotInvert.style.filter = "invert(1)"
         }, 750)
 
         if (isVertical) {
@@ -300,12 +302,14 @@ function mainInit(update) {
         if (!isVertical) {
             setTimeout(() => {
                 languageIcon.style.filter = "invert(0)"
+                languageIconNotInvert.style.filter = "invert(0)"
             }, 500)
         }
         if (isVertical) {
             setTimeout(() => {
                 socialMediaDivs.forEach((div) => {
                     div.style.filter = "invert(0)"
+                    languageIconNotInvert.style.filter = "invert(0)"
                 })
             }, 500)
         }
