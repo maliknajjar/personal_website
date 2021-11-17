@@ -59,6 +59,18 @@ function mainInit(update) {
     let codeTimeout;
     let designTimeout;
 
+    // event listener for contact us
+    let theContact = document.querySelector(".contact")
+    let back = document.querySelector(".back")
+    languageIconNotInvert.addEventListener("click", () => {
+        theContact.style.opacity = "1"
+        theContact.style.pointerEvents = "all";
+    })
+    back.addEventListener("click", () => {
+        theContact.style.opacity = "0"
+        theContact.style.pointerEvents = "none";
+    })
+
     // add event listener for window resize
     changeIsVertical()
 

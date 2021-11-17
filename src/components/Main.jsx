@@ -29,21 +29,21 @@ function Main() {
         if(history.location.state.from == "code") {
             // when comming from the code page
             jsx = <>
-                <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
-                <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+                <div className="whiteTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+                <div className="blackTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
             </>
         } else {
             // when comming from the design page
             jsx = <>
-                <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
-                <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+                <div className="blackTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+                <div className="whiteTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
             </>
         }
     } else {
         // when opening the page
         jsx = <>
-            <div className="whiteTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
-            <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+            <div className="whiteTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "white", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
+            <div className="blackTransition" style={{position:"absolute", zIndex: "200", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
         </>
     }
     let blackTransition;
@@ -124,7 +124,7 @@ function Main() {
                 <img style={{height: "100%", filter: "invert(1)", margin: "5px"}} src={languageIcon} alt="" />
                 <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
             </div>
-            <div onClick={() => {changeLanguage(dictionairy.language == "en" ? "ar" : "en")}} className="languageIconNotInvert languageIcon" style={{zIndex: "30", cursor: "pointer", bottom: "20px", right: "20px", top: "initial", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
+            <div className="languageIconNotInvert languageIcon" style={{zIndex: "30", cursor: "pointer", bottom: "20px", right: "20px", top: "initial", left: "initial", display: "flex", height: "25px", alignItems: "center", justifyContent: "flex-end"}}>
                 <img style={{height: "100%", margin: "5px"}} src={phone} alt="" />
                 <div className="thetext" style={{marginLeft: "5px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "Contact Us" : "تواصل معي"}</div>
             </div>
@@ -278,9 +278,10 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <div className="contact">
+            <div className="contact" style={{opacity: "0"}}>
                 <div className="title">Contact Us</div>
-                <div className="message">Contact Us</div>
+                <div className="message">You can contact me on <span style={{color: "white"}}>malik446644@gmail.com</span> or message me on my <a style={{color: "white", textDecoration: "underline"}} href="https://www.facebook.com/maliknajjjar" target="_blank">facebook page</a></div>
+                <div className="back">{"<-"} Back</div>
             </div>
         </div>
     );
