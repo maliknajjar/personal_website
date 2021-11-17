@@ -317,6 +317,7 @@ body .codeDiv {
     color: rgb(179, 179, 179);
     transition: 250ms;
     pointer-events: none;
+    padding: 25px;
 }
 
 .contact .title {

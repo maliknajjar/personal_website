@@ -55,5 +55,21 @@ module.exports = {
             "en": "Projects",
             "ar": "المشاريع"
         },
+        "contact": {
+            "en": "Contact Us",
+            "ar": "تواصل معي"
+        },
+        "ability": {
+            "en": "You can contact me on ",
+            "ar": " تستطيعون التواصل معي عن طريق "
+        },
+        "or": {
+            "en": " or message me on my ",
+            "ar": " او مراسلتي على "
+        },
+        "facebookPage": {
+            "en": "facebook page",
+            "ar": "صفحة الفيسبوك"
+        },
     }
 }

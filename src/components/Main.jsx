@@ -279,9 +279,9 @@ function Main() {
                 </div>
             </div>
             <div className="contact" style={{opacity: "0"}}>
-                <div className="title">Contact Us</div>
-                <div className="message">You can contact me on <span style={{color: "white"}}>malik446644@gmail.com</span> or message me on my <a style={{color: "white", textDecoration: "underline"}} href="https://www.facebook.com/maliknajjjar" target="_blank">facebook page</a></div>
-                <div className="back">{"<-"} Back</div>
+                <div className="title">{dictionairy.translations.contact[dictionairy.language]}</div>
+                <div className="message" dir="auto">{dictionairy.translations.ability[dictionairy.language]}<span dir="auto" style={{color: "white"}}>malik446644@gmail.com</span>{dictionairy.translations.or[dictionairy.language]}<a dir="auto" style={{color: "white", textDecoration: "underline"}} href="https://www.facebook.com/maliknajjjar" target="_blank">{dictionairy.translations.facebookPage[dictionairy.language]}</a></div>
+                <div className="back">{"<-"} {dictionairy.translations.goback[dictionairy.language]}</div>
             </div>
         </div>
     );
