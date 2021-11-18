@@ -241,7 +241,7 @@ let designProjects = [
             "title": "Chechia film poster",
             "description": "A short documentry film poster design, competed in university film festival",
             "date": "01/01/2016",
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/85f711128839713.615e5a89db284.png",
+            "image": "https://mir-cdn.behance.net/v1/rendition/project_modules/1400/4f91a3128839713.61614e368d42e.png",
             "link": "https://www.behance.net/gallery/128839713/the-short-film-of-chechia-poster"
         },
         "ar": {
