@@ -125,7 +125,7 @@ function Code() {
           <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
       </div>
       <div className=" pageBigContainer">
-        <div className="pageHeader" style={{backgroundImage: `url(${coverImage}), url(${coverImageLow})`}}>
+        <div className="pageHeader" style={{backgroundImage: `url(${coverImage})`}}>
           <SocialMedia forCode={true} />
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center"}}>

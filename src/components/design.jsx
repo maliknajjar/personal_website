@@ -63,7 +63,7 @@ function Design() {
         <div className="thetext" style={{fontSize: "20px", color: "black", fontWeight: "bold"}}>{dictionairy.language == "en" ? "عربي" : "EN"}</div>
       </div>
       <div className=" pageBigContainer" style={{backgroundColor: "#000000", backgroundImage: "linear-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 90%))"}}>
-        <div className="pageHeader" style={{backgroundSize: "cover", backgroundImage: `url(${coverImage}), url(${coverImageLow})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
+        <div className="pageHeader" style={{backgroundSize: "cover", backgroundImage: `url(${coverImage})`, boxShadow: "0px 0px 50px 25px rgb(255 255 255)"}}>
           <SocialMedia forDesign={true} />
           <div className="pageHeaderContainer">
             <div onClick={() => {goTo("/")}} style={{display: "flex", alignItems: "center", cursor: "pointer"}}>
