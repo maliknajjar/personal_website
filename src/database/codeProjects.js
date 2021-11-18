@@ -4,8 +4,7 @@ let codeProjects = [
             "title": "Pymake",
             "description": "A personal library in python that helps building c/c++ projects",
             "date": "16/09/2021",
-            "image": "https://maliknajjar.github.io/projects/img/pymake.PNG",
-            "link": "https://maliknajjar.github.io/projects/pymake"
+            "link": "https://github.com/maliknajjar/pymake"
         },
         "ar": {
             "title": "Pymake",
@@ -17,8 +16,7 @@ let codeProjects = [
             "title": "Videod",
             "description": "A program that converts files' bytes into video pixels using ffmpeg library for unlimited storage on Youtube",
             "date": "24/08/2021",
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/48ab00128907553.615f96604c73c.png",
-            "link": "https://maliknajjar.github.io/projects/videod"
+            "link": "https://github.com/maliknajjar/videod"
         },
         "ar": {
             "title": "Videod",
@@ -30,8 +28,7 @@ let codeProjects = [
             "title": "Opencv project",
             "description": "A project that uses opencv library to detect objects with specific shape and color and calculates its direction",
             "date": "22/07/2021",
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c7b9d128907407.615f95125fd27.png",
-            "link": "https://maliknajjar.github.io/projects/opencv_project"
+            "link": "https://github.com/maliknajjar/cameraScriptForDrone"
         },
         "ar": {
             "title": "مشروع اوبن سي في",

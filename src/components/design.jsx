@@ -2,7 +2,7 @@ import "./code.css"
 import { useEffect, useState, useReducer } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useHistory } from "react-router-dom";
 import logo from "../images/logo.svg"
-import coverImage from "../images/test.svg"
+import coverImage from "../images/coverForDesign.PNG"
 import coverImageLow from "../images/testLow.jpg"
 import backButton from "../images/whiteBackButton.svg"
 import codeProjects from "../database/designProducts"

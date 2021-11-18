@@ -158,6 +158,42 @@ a {
     width: 75px;
 }
 
+.theBigContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.theBigContainer .theCardTitle {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.theBigContainer .theCarddescription {
+    font-size: large;
+    color: rgb(201, 201, 201);
+}
+
+.theBigContainer .theCardLink {
+    font-size: medium;
+    color: rgb(201, 201, 201);
+    margin-top: 25px;
+    padding: 10px;
+    border: 3px solid rgb(95, 95, 95);
+    border-radius: 7.5px;
+    transition: 500ms;
+    font-weight: bold;
+    background-color: rgb(48, 48, 48);
+}
+
+.theBigContainer .theCardLink:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
 @media only screen and (max-width: 500px) {
     .skillsPart {
         grid-template-columns: auto auto auto;

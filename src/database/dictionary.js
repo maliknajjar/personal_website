@@ -71,5 +71,9 @@ module.exports = {
             "en": "facebook page",
             "ar": "صفحة الفيسبوك"
         },
+        "checkRepo": {
+            "en": "Check Repository",
+            "ar": "تفقد المخزن"
+        },
     }
 }

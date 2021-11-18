@@ -70,6 +70,50 @@ function Code() {
     }, 250)
   }
 
+  function theRender(isImage, theproject) {
+    if (isImage) {
+      return (
+        <>
+          <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
+          <div className="cirlceContaienr flex">
+            <div className="circle"></div>
+            <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{theproject.en.date}</div>
+          </div>
+          <div className="card divWithBorder">
+            <a href={theproject.en.link} target="_blank">
+              <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${theproject.en.image}')`}}>
+                <div className="whenHovering">
+                  <img src={link} alt="" />
+                </div>
+                <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
+                  <div className="cardTitle">{theproject[dictionairy.language].title}</div>
+                  <div className="cardDescription">{theproject[dictionairy.language].description}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
+          <div className="cirlceContaienr flex">
+            <div className="circle"></div>
+            <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{theproject.en.date}</div>
+          </div>
+          <div className="card divWithBorder">
+            <div className="theBigContainer">
+              <div className="theCardTitle">{theproject[dictionairy.language].title}</div>
+              <div className="theCarddescription">{theproject[dictionairy.language].description}</div>
+              <a href={theproject.en.link} target="_blank"><div className="theCardLink">{dictionairy.translations.checkRepo[dictionairy.language]}</div></a>
+            </div>
+          </div>
+        </>
+      )
+    }
+  }
+
   return (
     <>
       <div className="blackTransition" style={{position:"absolute", zIndex: "20", backgroundColor: "black", width: "100%", height: "100%", opacity: "1", transition: "250ms", pointerEvents: "none"}}></div>
@@ -134,28 +178,7 @@ function Code() {
           {/* code projects loop */}
           {/* ////////////////// */}
           {codeProjects.map((project) => {
-            return (
-              <>
-                <div className="divWithBorder" style={{width: "50px", height: "30px"}}></div>
-                <div className="cirlceContaienr flex">
-                  <div className="circle"></div>
-                  <div className="card" style={{color: "rgba(255, 255, 255, 0.5)"}}>{project.en.date}</div>
-                </div>
-                <div className="card divWithBorder">
-                  <a href={project.en.link} target="_blank">
-                    <div className="innerCard" style={{backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%), url('${project.en.image}')`}}>
-                      <div className="whenHovering">
-                        <img src={link} alt="" />
-                      </div>
-                      <div style={{display: "flex" ,flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
-                        <div className="cardTitle">{project[dictionairy.language].title}</div>
-                        <div className="cardDescription">{project[dictionairy.language].description}</div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </>
-            )
+            return theRender(project.en.image == null ? false : true, project)
           })}
         </div>
       </div>
