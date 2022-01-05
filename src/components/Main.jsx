@@ -280,7 +280,7 @@ function Main() {
             </div>
             <div className="contact" style={{opacity: "0"}}>
                 <div className="title">{dictionairy.translations.contact[dictionairy.language]}</div>
-                <div className="message" dir="auto">{dictionairy.translations.ability[dictionairy.language]}<span dir="auto" style={{color: "white"}}>malik446644@gmail.com</span>{dictionairy.translations.or[dictionairy.language]}<a dir="auto" style={{color: "white", textDecoration: "underline"}} href="https://www.facebook.com/maliknajjjar" target="_blank">{dictionairy.translations.facebookPage[dictionairy.language]}</a></div>
+                <div className="message" dir="auto">{dictionairy.translations.ability[dictionairy.language]}<span dir="auto" style={{color: "white"}}>malik446644@gmail.com</span></div>
                 <div className="back">{"<-"} {dictionairy.translations.goback[dictionairy.language]}</div>
             </div>
         </div>
